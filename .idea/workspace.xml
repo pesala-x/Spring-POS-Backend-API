@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="CustomerDTO and CustomerEntity implemented..">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/customObj/CustomerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/customObj/impl/CustomerErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dao/CustomerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/impl/CustomerServiceIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/util/MappingUtil.java" afterDir="false" />
+    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="CustomerDAO and ServiceLayers implemented with ModelMapper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +175,7 @@
       <workItem from="1728742066835" duration="1418000" />
       <workItem from="1728744298700" duration="7017000" />
       <workItem from="1728799182657" duration="1892000" />
-      <workItem from="1728881884206" duration="7329000" />
+      <workItem from="1728881884206" duration="8814000" />
     </task>
     <task id="LOCAL-00001" summary="dependencies &amp; configurations added">
       <option name="closed" value="true" />
@@ -223,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728893041646</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CustomerDAO and ServiceLayers implemented with ModelMapper">
+      <option name="closed" value="true" />
+      <created>1728897533581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728897533581</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +237,7 @@
     <MESSAGE value="Health Test successfully ran." />
     <MESSAGE value="logBack ok" />
     <MESSAGE value="CustomerDTO and CustomerEntity implemented.." />
-    <option name="LAST_COMMIT_MESSAGE" value="CustomerDTO and CustomerEntity implemented.." />
+    <MESSAGE value="CustomerDAO and ServiceLayers implemented with ModelMapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="CustomerDAO and ServiceLayers implemented with ModelMapper" />
   </component>
 </project>
