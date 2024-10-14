@@ -27,7 +27,7 @@ public class CustomerServiceIMPL implements CustomerService {
     public String saveCustomer(CustomerDTO customerDTO) {
         customerDTO.setCustomerId(generateCustomerID());
         customerDTO.setName(customerDTO.getFirstName() + " " + customerDTO.getLastName());
-        customerDTO.setRegisterDateTime(DateTimeUtil.getCurrentDateTime());
+        customerDTO.setLastUpdatedAt(DateTimeUtil.getCurrentDateTime());
         CustomerEntity customerEntity = mappingUtil.convertToCustomerEntity(customerDTO);
         customerDAO.save(customerEntity);
         System.out.println("Customer saved : " + customerEntity);

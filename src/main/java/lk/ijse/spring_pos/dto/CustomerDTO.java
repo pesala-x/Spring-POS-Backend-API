@@ -19,5 +19,5 @@ public class CustomerDTO implements Serializable, CustomerResponse {
     private String address;
     private String email;
     private int mobile;
-    private LocalDateTime registerDateTime;
+    private LocalDateTime lastUpdatedAt;
 }
