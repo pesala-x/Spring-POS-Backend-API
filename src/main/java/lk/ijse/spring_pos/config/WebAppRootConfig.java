@@ -27,7 +27,7 @@ public class WebAppRootConfig {
     public DataSource dataSource() {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/spring_pos?createDatabaseIfNotExist=true");
+        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/spring_pos_db?createDatabaseIfNotExist=true");
         driverManagerDataSource.setUsername("root");
         driverManagerDataSource.setPassword("Ijse@1234");
         return driverManagerDataSource;
