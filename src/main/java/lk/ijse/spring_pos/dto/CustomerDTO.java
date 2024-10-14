@@ -1,5 +1,6 @@
 package lk.ijse.spring_pos.dto;
 
+import lk.ijse.spring_pos.customObj.CustomerResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class CustomerDTO implements Serializable {
+public class CustomerDTO implements Serializable, CustomerResponse {
     private String customerId;
     private String firstName;
     private String lastName;

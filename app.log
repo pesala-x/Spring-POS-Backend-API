@@ -2,3 +2,4 @@
 10:38:54:888 [http-nio-8080-exec-2] INFO  l.i.s.controller.HealthController - Spring POS API is running
 10:51:07:567 [http-nio-8080-exec-5] INFO  l.i.s.controller.HealthController - Spring POS API is running
 23:57:20:944 [http-nio-8080-exec-3] INFO  l.i.s.controller.HealthController - Spring POS API is running
+00:00:00:232 [http-nio-8080-exec-6] INFO  l.i.s.controller.HealthController - Customer saved : CustomerDTO(customerId=C001, firstName=Pesala, lastName=Winodith, name=Pesala Winodith, address=Galle, email=Pesalax@gmail.com, mobile=740996354, registerDateTime=2024-10-14T23:59:59.633113200)

@@ -1,5 +1,6 @@
 package lk.ijse.spring_pos.controller;
 
+import lk.ijse.spring_pos.customObj.CustomerResponse;
 import lk.ijse.spring_pos.dto.CustomerDTO;
 import lk.ijse.spring_pos.exception.DataPersistFailedException;
 import lk.ijse.spring_pos.service.CustomerService;
@@ -9,10 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -38,5 +36,10 @@ public class CustomerController {
                 return ResponseEntity.internalServerError().build();
             }
         }
+    }
+
+    @GetMapping(value = "/{customerId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public CustomerResponse getCustomerById(@PathVariable("customerId") String customerId) {
+        return customerService.getCustomerById(customerId);
     }
 }
