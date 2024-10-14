@@ -9,12 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="logBack ok">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/CustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/entity/CustomerEntity.java" afterDir="false" />
+    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="CustomerDTO and CustomerEntity implemented..">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/customObj/CustomerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/customObj/impl/CustomerErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dao/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/impl/CustomerServiceIMPL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/util/MappingUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/config/WebAppRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/config/WebAppRootConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -178,7 +181,7 @@
       <workItem from="1728742066835" duration="1418000" />
       <workItem from="1728744298700" duration="7017000" />
       <workItem from="1728799182657" duration="1892000" />
-      <workItem from="1728881884206" duration="3229000" />
+      <workItem from="1728881884206" duration="7329000" />
     </task>
     <task id="LOCAL-00001" summary="dependencies &amp; configurations added">
       <option name="closed" value="true" />
@@ -212,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728883542422</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CustomerDTO and CustomerEntity implemented..">
+      <option name="closed" value="true" />
+      <created>1728893041646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728893041646</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +234,7 @@
     <MESSAGE value="Added MIT LICENSE." />
     <MESSAGE value="Health Test successfully ran." />
     <MESSAGE value="logBack ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="logBack ok" />
+    <MESSAGE value="CustomerDTO and CustomerEntity implemented.." />
+    <option name="LAST_COMMIT_MESSAGE" value="CustomerDTO and CustomerEntity implemented.." />
   </component>
 </project>
