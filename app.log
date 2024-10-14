@@ -1,0 +1,3 @@
+11:50:19:064 [http-nio-8080-exec-1] INFO  l.i.s.controller.HealthController - Spring POS API is running
+10:38:54:888 [http-nio-8080-exec-2] INFO  l.i.s.controller.HealthController - Spring POS API is running
+10:51:07:567 [http-nio-8080-exec-5] INFO  l.i.s.controller.HealthController - Spring POS API is running
