@@ -1,5 +1,6 @@
 package lk.ijse.spring_pos.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -8,20 +9,22 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity
 @Table(name = "customers")
+@Entity
 public class CustomerEntity implements Serializable {
     @Id
     private String customerId;
-    private String firstName;
-    private String lastName;
     private String name;
     private String address;
+    @Column(unique = true)
     private String email;
+    @Column(unique = true)
     private int mobile;
-    private LocalDate registerDate;
+    private LocalDateTime registerDateTime;
 }
+
