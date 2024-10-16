@@ -66,7 +66,7 @@ public class ItemServiceIMPL implements ItemService {
 
     @Override
     public List<ItemDTO> getAllItems() {
-        return List.of();
+        return mappingUtil.convertToItemDTOList(itemDAO.findAll());
     }
 
     private String generateItemID() {

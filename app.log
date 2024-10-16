@@ -28,3 +28,4 @@
 09:28:40:703 [http-nio-8080-exec-6] INFO  l.i.s.controller.HealthController - Customer deleted : C005
 09:30:08:020 [http-nio-8080-exec-10] INFO  l.i.s.controller.HealthController - Customer deleted : C005
 09:39:16:028 [http-nio-8080-exec-1] INFO  l.i.s.controller.HealthController - Customer deleted : C005
+20:45:37:354 [http-nio-8080-exec-2] INFO  l.i.s.controller.ItemController - Item updated : ItemDTO(itemCode=null, category=Monster EnergyDrink, unitPrice=250.0, qtyOnHand=10, registerDate=null, expireDate=2026-12-20)
