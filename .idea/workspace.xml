@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="Item Update(GET Request) function implemented successfully..">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/impl/ItemServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/impl/ItemServiceIMPL.java" afterDir="false" />
+    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="GetAll Items(GET Request) function implemented successfully..">
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/controller/ItemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +187,7 @@
       <workItem from="1728881884206" duration="9295000" />
       <workItem from="1728928124205" duration="6998000" />
       <workItem from="1728958539211" duration="1674000" />
-      <workItem from="1729050100768" duration="8308000" />
+      <workItem from="1729050100768" duration="8628000" />
     </task>
     <task id="LOCAL-00001" summary="dependencies &amp; configurations added">
       <option name="closed" value="true" />
@@ -366,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729091963878</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="GetAll Items(GET Request) function implemented successfully..">
+      <option name="closed" value="true" />
+      <created>1729092854197</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1729092854197</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,6 +410,7 @@
     <MESSAGE value="Item Search(GET Request) function implemented successfully.." />
     <MESSAGE value="update CustomerController PATCH mapping." />
     <MESSAGE value="Item Update(GET Request) function implemented successfully.." />
-    <option name="LAST_COMMIT_MESSAGE" value="Item Update(GET Request) function implemented successfully.." />
+    <MESSAGE value="GetAll Items(GET Request) function implemented successfully.." />
+    <option name="LAST_COMMIT_MESSAGE" value="GetAll Items(GET Request) function implemented successfully.." />
   </component>
 </project>

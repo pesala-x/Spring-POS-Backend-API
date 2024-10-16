@@ -3,6 +3,7 @@ package lk.ijse.spring_pos.controller;
 import lk.ijse.spring_pos.customObj.ItemResponse;
 import lk.ijse.spring_pos.dto.ItemDTO;
 import lk.ijse.spring_pos.exception.DataPersistFailedException;
+import lk.ijse.spring_pos.exception.ItemNotFoundException;
 import lk.ijse.spring_pos.service.ItemService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -70,6 +71,19 @@ public class ItemController {
             } catch (Exception e) {
                 return ResponseEntity.internalServerError().build();
             }
+        }
+    }
+
+    @DeleteMapping("/{itemCode}")
+    public ResponseEntity<Void> deleteItem(@PathVariable("itemCode") String itemCode) {
+        try {
+            itemService.deleteItem(itemCode);
+            logger.info("Item deleted : " + itemCode);
+            return ResponseEntity.noContent().build();
+        } catch (ItemNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().build();
         }
     }
 }

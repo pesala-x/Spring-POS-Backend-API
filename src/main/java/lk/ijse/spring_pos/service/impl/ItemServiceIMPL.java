@@ -52,7 +52,13 @@ public class ItemServiceIMPL implements ItemService {
 
     @Override
     public void deleteItem(String id) {
-
+        if (itemDAO.existsById(id)) {
+            itemDAO.deleteById(id);
+            System.out.println("Item deleted : " + id);
+        } else {
+            System.out.println("Item not found");
+            throw new ItemNotFoundException("Item not found");
+        }
     }
 
     @Override
