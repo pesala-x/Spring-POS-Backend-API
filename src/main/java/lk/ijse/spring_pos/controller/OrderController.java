@@ -32,7 +32,7 @@ public class OrderController {
             } catch (DataPersistFailedException e) {
                 return ResponseEntity.badRequest().build();
             } catch (Exception e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
                 return ResponseEntity.internalServerError().build();
             }
         }

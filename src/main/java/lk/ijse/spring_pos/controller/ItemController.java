@@ -39,6 +39,7 @@ public class ItemController {
             } catch (DataPersistFailedException e) {
                 return ResponseEntity.badRequest().build();
             } catch (Exception e) {
+                logger.error(e.getMessage());
                 return ResponseEntity.internalServerError().build();
             }
         }
@@ -69,6 +70,7 @@ public class ItemController {
             } catch (DataPersistFailedException e) {
                 return ResponseEntity.badRequest().build();
             } catch (Exception e) {
+                logger.error(e.getMessage());
                 return ResponseEntity.internalServerError().build();
             }
         }
@@ -83,6 +85,7 @@ public class ItemController {
         } catch (ItemNotFoundException e) {
             return ResponseEntity.notFound().build();
         } catch (Exception e) {
+            logger.error(e.getMessage());
             return ResponseEntity.internalServerError().build();
         }
     }
