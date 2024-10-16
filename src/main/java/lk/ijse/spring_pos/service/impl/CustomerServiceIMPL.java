@@ -5,6 +5,7 @@ import lk.ijse.spring_pos.customObj.impl.CustomerErrorResponse;
 import lk.ijse.spring_pos.dao.CustomerDAO;
 import lk.ijse.spring_pos.dto.CustomerDTO;
 import lk.ijse.spring_pos.entity.CustomerEntity;
+import lk.ijse.spring_pos.exception.CustomerNotFoundException;
 import lk.ijse.spring_pos.service.CustomerService;
 import lk.ijse.spring_pos.util.DateTimeUtil;
 import lk.ijse.spring_pos.util.MappingUtil;
@@ -14,6 +15,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -36,12 +39,28 @@ public class CustomerServiceIMPL implements CustomerService {
 
     @Override
     public void updateCustomer(String id, CustomerDTO customerDTO) {
-
+        Optional<CustomerEntity> tmpCustomer = customerDAO.findById(id);
+        if (!tmpCustomer.isPresent()) {
+            System.out.println("Customer not found");
+            throw new CustomerNotFoundException("Customer not found");
+        } else {
+            tmpCustomer.get().setName(customerDTO.getFirstName() + " " + customerDTO.getLastName());
+            tmpCustomer.get().setAddress(customerDTO.getAddress());
+            tmpCustomer.get().setMobile(customerDTO.getMobile());
+            tmpCustomer.get().setLastUpdatedAt(DateTimeUtil.getCurrentDateTime());
+            System.out.println("Customer updated : " + customerDTO);
+        }
     }
 
     @Override
     public void deleteCustomer(String id) {
-
+        if (customerDAO.existsById(id)) {
+            customerDAO.deleteById(id);
+            System.out.println("Customer deleted : " + id);
+        } else {
+            System.out.println("Customer not found");
+            throw new CustomerNotFoundException("Customer not found");
+        }
     }
 
     @Override

@@ -23,6 +23,7 @@ public class CustomerController {
 
     static Logger logger = LoggerFactory.getLogger(HealthController.class);
 
+    //Save Customer
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> saveCustomer(@RequestBody CustomerDTO customer) {
         if (customer == null) {
@@ -40,11 +41,13 @@ public class CustomerController {
         }
     }
 
+    //Search Customer
     @GetMapping(value = "/{customerId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CustomerResponse getCustomerById(@PathVariable("customerId") String customerId) {
         return customerService.getCustomerById(customerId);
     }
 
+    //Update Customer
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PatchMapping(value = "/{customerId}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> updateCustomer(@RequestBody CustomerDTO customerDTO, @PathVariable("customerId") String customerId) {
@@ -60,6 +63,20 @@ public class CustomerController {
             } catch (Exception e) {
                 return ResponseEntity.internalServerError().build();
             }
+        }
+    }
+
+    //Delete Customer
+    @DeleteMapping("/{customerId}")
+    public ResponseEntity<Void> deleteCustomer(@PathVariable("customerId") String customerId) {
+        try {
+            customerService.deleteCustomer(customerId);
+            logger.info("Customer deleted : " + customerId);
+            return ResponseEntity.noContent().build();
+        } catch (CustomerNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().build();
         }
     }
 }
