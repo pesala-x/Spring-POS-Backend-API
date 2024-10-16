@@ -30,3 +30,4 @@
 09:39:16:028 [http-nio-8080-exec-1] INFO  l.i.s.controller.HealthController - Customer deleted : C005
 20:45:37:354 [http-nio-8080-exec-2] INFO  l.i.s.controller.ItemController - Item updated : ItemDTO(itemCode=null, category=Monster EnergyDrink, unitPrice=250.0, qtyOnHand=10, registerDate=null, expireDate=2026-12-20)
 21:08:18:824 [http-nio-8080-exec-7] INFO  l.i.s.controller.ItemController - Item deleted : I001
+21:45:12:177 [http-nio-8080-exec-3] INFO  l.i.s.controller.OrderController - Order saved : OrderDTO(orderId=O001, customerId=C003, orderDetails=[OrderDetailDTO(orderId=null, itemCode=I002, qty=2, unitPrice=200.0, total=0.0), OrderDetailDTO(orderId=null, itemCode=I003, qty=7, unitPrice=50.0, total=0.0)], orderDateTime=2024-10-16T21:45:11.702982700, total=750.0, paymentMethod=cash)
