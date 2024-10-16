@@ -27,3 +27,4 @@
 09:26:20:628 [http-nio-8080-exec-3] INFO  l.i.s.controller.HealthController - Customer updated : CustomerDTO(customerId=null, firstName=Usal, lastName=Winodith, name=null, address=Mapalagama, email=usalwinoh@gmail.com, mobile=712269633, lastUpdatedAt=null)
 09:28:40:703 [http-nio-8080-exec-6] INFO  l.i.s.controller.HealthController - Customer deleted : C005
 09:30:08:020 [http-nio-8080-exec-10] INFO  l.i.s.controller.HealthController - Customer deleted : C005
+09:39:16:028 [http-nio-8080-exec-1] INFO  l.i.s.controller.HealthController - Customer deleted : C005
