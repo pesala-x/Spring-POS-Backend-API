@@ -23,7 +23,7 @@ public class CustomerController {
     @Autowired
     private final CustomerService customerService;
 
-    static Logger logger = LoggerFactory.getLogger(HealthController.class);
+    static Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
     //Save Customer
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
