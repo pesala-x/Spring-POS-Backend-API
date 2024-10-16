@@ -9,17 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="Customer Update(PATCH Request) function implemented successfully">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/899f026d-761e-42cb-9060-d23b664185ce.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/899f026d-761e-42cb-9060-d23b664185ce/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/899f026d-761e-42cb-9060-d23b664185ce/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/899f026d-761e-42cb-9060-d23b664185ce/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/899f026d-761e-42cb-9060-d23b664185ce/storage_v2/_src_/schema/spring_pos_db.u7Bs6g.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/899f026d-761e-42cb-9060-d23b664185ce/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="Customer Delete(DELETE Request) function implemented successfully">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/impl/CustomerServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/impl/CustomerServiceIMPL.java" afterDir="false" />
     </list>
@@ -195,7 +186,7 @@
       <workItem from="1728881884206" duration="9295000" />
       <workItem from="1728928124205" duration="6998000" />
       <workItem from="1728958539211" duration="1674000" />
-      <workItem from="1729050100768" duration="1432000" />
+      <workItem from="1729050100768" duration="3144000" />
     </task>
     <task id="LOCAL-00001" summary="dependencies &amp; configurations added">
       <option name="closed" value="true" />
@@ -293,11 +284,38 @@
       <option name="project" value="LOCAL" />
       <updated>1728933419186</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Customer Delete(DELETE Request) function implemented successfully">
+      <option name="closed" value="true" />
+      <created>1729051904825</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729051904825</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Customer Delete(DELETE Request) function implemented successfully">
+      <option name="closed" value="true" />
+      <created>1729051912013</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729051912013</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dependencies &amp; configurations added" />
@@ -310,6 +328,7 @@
     <MESSAGE value="Customer save(POST Request) function implemented successfully" />
     <MESSAGE value="Customer Search(GET Request) function implemented successfully" />
     <MESSAGE value="Customer Update(PATCH Request) function implemented successfully" />
-    <option name="LAST_COMMIT_MESSAGE" value="Customer Update(PATCH Request) function implemented successfully" />
+    <MESSAGE value="Customer Delete(DELETE Request) function implemented successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customer Delete(DELETE Request) function implemented successfully" />
   </component>
 </project>

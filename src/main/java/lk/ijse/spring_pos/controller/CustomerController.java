@@ -14,6 +14,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/customers")
@@ -45,6 +47,12 @@ public class CustomerController {
     @GetMapping(value = "/{customerId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CustomerResponse getCustomerById(@PathVariable("customerId") String customerId) {
         return customerService.getCustomerById(customerId);
+    }
+
+    //Get All Customers
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<CustomerDTO> getAllCustomers() {
+        return customerService.getAllCustomers();
     }
 
     //Update Customer
