@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -35,7 +37,17 @@ public class ItemServiceIMPL implements ItemService {
 
     @Override
     public void updateItem(String id, ItemDTO itemDTO) {
-
+        Optional<ItemEntity> tmpItem = itemDAO.findById(id);
+        if (!tmpItem.isPresent()) {
+            System.out.println("Item not found");
+            throw new ItemNotFoundException("Item not found");
+        } else {
+            tmpItem.get().setCategory(itemDTO.getCategory());
+            tmpItem.get().setUnitPrice(itemDTO.getUnitPrice());
+            tmpItem.get().setQtyOnHand(itemDTO.getQtyOnHand());
+            tmpItem.get().setExpireDate(itemDTO.getExpireDate());
+            System.out.println("Item updated : " + itemDTO);
+        }
     }
 
     @Override
