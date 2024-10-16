@@ -58,13 +58,13 @@ public class CustomerController {
     //Update Customer
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PatchMapping(value = "/{customerId}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> updateCustomer(@RequestBody CustomerDTO customerDTO, @PathVariable("customerId") String customerId) {
+    public ResponseEntity<Void> updateCustomer(@RequestBody CustomerDTO customerDTO, @PathVariable("customerId") String customerId) {
         if (customerDTO == null || customerId == null) {
             return ResponseEntity.badRequest().build();
         } else {
             try {
                 customerService.updateCustomer(customerId, customerDTO);
-                logger.info("Customer updated : {}", customerDTO);
+                logger.info("Customer updated : " + customerDTO);
                 return ResponseEntity.noContent().build();
             } catch (CustomerNotFoundException e) {
                 return ResponseEntity.notFound().build();
