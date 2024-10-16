@@ -1,15 +1,13 @@
 package lk.ijse.spring_pos.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -26,5 +24,7 @@ public class CustomerEntity implements Serializable {
     @Column(unique = true)
     private int mobile;
     private LocalDateTime lastUpdatedAt;
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    private List<OrderEntity> orders;
 }
 

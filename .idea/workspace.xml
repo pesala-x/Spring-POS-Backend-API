@@ -9,8 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="GetAll Items(GET Request) function implemented successfully..">
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/controller/ItemController.java" afterDir="false" />
+    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="Delete Items(DELETE Request) function implemented successfully..">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/customObj/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/customObj/impl/OrderErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/OrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/OrderDetailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +81,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lk.ijse.spring_pos.dto" />
+      <recent name="lk.ijse.spring_pos.customObj.impl" />
+      <recent name="lk.ijse.spring_pos.customObj" />
       <recent name="lk.ijse.spring_pos.exception" />
       <recent name="lk.ijse.spring_pos.dao" />
-      <recent name="lk.ijse.spring_pos.entity" />
-      <recent name="lk.ijse.spring_pos.dto" />
     </key>
   </component>
   <component name="RunManager">
@@ -187,7 +192,7 @@
       <workItem from="1728881884206" duration="9295000" />
       <workItem from="1728928124205" duration="6998000" />
       <workItem from="1728958539211" duration="1674000" />
-      <workItem from="1729050100768" duration="8628000" />
+      <workItem from="1729050100768" duration="9858000" />
     </task>
     <task id="LOCAL-00001" summary="dependencies &amp; configurations added">
       <option name="closed" value="true" />
@@ -373,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729092854197</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Delete Items(DELETE Request) function implemented successfully..">
+      <option name="closed" value="true" />
+      <created>1729093179470</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729093179470</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +424,7 @@
     <MESSAGE value="update CustomerController PATCH mapping." />
     <MESSAGE value="Item Update(GET Request) function implemented successfully.." />
     <MESSAGE value="GetAll Items(GET Request) function implemented successfully.." />
-    <option name="LAST_COMMIT_MESSAGE" value="GetAll Items(GET Request) function implemented successfully.." />
+    <MESSAGE value="Delete Items(DELETE Request) function implemented successfully.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete Items(DELETE Request) function implemented successfully.." />
   </component>
 </project>

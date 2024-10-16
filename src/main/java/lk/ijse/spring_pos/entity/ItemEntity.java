@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,4 +22,6 @@ public class ItemEntity implements Serializable {
     private int qtyOnHand;
     private LocalDate registerDate;
     private LocalDate expireDate;
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL)
+    private List<OrderDetailEntity> orderDetails;
 }
