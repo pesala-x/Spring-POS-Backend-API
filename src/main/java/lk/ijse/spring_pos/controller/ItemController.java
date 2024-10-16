@@ -1,5 +1,6 @@
 package lk.ijse.spring_pos.controller;
 
+import jakarta.validation.Valid;
 import lk.ijse.spring_pos.customObj.ItemResponse;
 import lk.ijse.spring_pos.dto.ItemDTO;
 import lk.ijse.spring_pos.exception.DataPersistFailedException;
@@ -28,7 +29,7 @@ public class ItemController {
 
     //save item
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> saveItem(@RequestBody ItemDTO itemDTO) {
+    public ResponseEntity<Void> saveItem(@Valid @RequestBody ItemDTO itemDTO) {
         if (itemDTO == null) {
             return ResponseEntity.badRequest().build();
         } else {
@@ -59,7 +60,7 @@ public class ItemController {
     //Update item
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PatchMapping(value = "/{itemCode}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> updateItem(@RequestBody ItemDTO itemDTO, @PathVariable("itemCode") String itemCode) {
+    public ResponseEntity<Void> updateItem(@Valid @RequestBody ItemDTO itemDTO, @PathVariable("itemCode") String itemCode) {
         if (itemDTO == null || itemCode == null) {
             return ResponseEntity.badRequest().build();
         } else {
