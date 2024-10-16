@@ -4,6 +4,7 @@ import lk.ijse.spring_pos.customObj.ItemResponse;
 import lk.ijse.spring_pos.dao.ItemDAO;
 import lk.ijse.spring_pos.dto.ItemDTO;
 import lk.ijse.spring_pos.entity.ItemEntity;
+import lk.ijse.spring_pos.exception.ItemNotFoundException;
 import lk.ijse.spring_pos.service.ItemService;
 import lk.ijse.spring_pos.util.DateTimeUtil;
 import lk.ijse.spring_pos.util.MappingUtil;
@@ -44,7 +45,11 @@ public class ItemServiceIMPL implements ItemService {
 
     @Override
     public ItemResponse getItemById(String id) {
-        return null;
+        if (itemDAO.existsById(id)) {
+            return mappingUtil.convertToItemDTO(itemDAO.getReferenceById(id));
+        } else {
+            throw new ItemNotFoundException("Item not found");
+        }
     }
 
     @Override
