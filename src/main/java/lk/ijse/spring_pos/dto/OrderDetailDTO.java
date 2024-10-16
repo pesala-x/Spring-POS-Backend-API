@@ -11,7 +11,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Data
 public class OrderDetailDTO implements Serializable, OrderResponse {
-    private String orderDetailId;
     private String orderId;
     private String itemCode;
     private int qty;

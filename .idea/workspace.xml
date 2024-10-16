@@ -9,12 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="Delete Items(DELETE Request) function implemented successfully..">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/customObj/OrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/customObj/impl/OrderErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/OrderDetailDTO.java" afterDir="false" />
+    <list default="true" id="4bff1a49-b400-4cf5-9b1f-6abe16b9c623" name="Changes" comment="order entity &amp; order detail entity implement with mapping relationships.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dao/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/service/impl/OrderServiceIMPL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/OrderDetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/dto/OrderDetailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/entity/OrderDetailEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/entity/OrderDetailEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/entity/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/util/MappingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/spring_pos/util/MappingUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +87,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lk.ijse.spring_pos.service" />
+      <recent name="lk.ijse.spring_pos.dao" />
+      <recent name="lk.ijse.spring_pos.entity" />
       <recent name="lk.ijse.spring_pos.dto" />
       <recent name="lk.ijse.spring_pos.customObj.impl" />
-      <recent name="lk.ijse.spring_pos.customObj" />
-      <recent name="lk.ijse.spring_pos.exception" />
-      <recent name="lk.ijse.spring_pos.dao" />
     </key>
   </component>
   <component name="RunManager">
@@ -192,7 +198,7 @@
       <workItem from="1728881884206" duration="9295000" />
       <workItem from="1728928124205" duration="6998000" />
       <workItem from="1728958539211" duration="1674000" />
-      <workItem from="1729050100768" duration="9858000" />
+      <workItem from="1729050100768" duration="11158000" />
     </task>
     <task id="LOCAL-00001" summary="dependencies &amp; configurations added">
       <option name="closed" value="true" />
@@ -386,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729093179470</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="order entity &amp; order detail entity implement with mapping relationships.">
+      <option name="closed" value="true" />
+      <created>1729094335751</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1729094335751</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,6 +439,7 @@
     <MESSAGE value="Item Update(GET Request) function implemented successfully.." />
     <MESSAGE value="GetAll Items(GET Request) function implemented successfully.." />
     <MESSAGE value="Delete Items(DELETE Request) function implemented successfully.." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete Items(DELETE Request) function implemented successfully.." />
+    <MESSAGE value="order entity &amp; order detail entity implement with mapping relationships." />
+    <option name="LAST_COMMIT_MESSAGE" value="order entity &amp; order detail entity implement with mapping relationships." />
   </component>
 </project>

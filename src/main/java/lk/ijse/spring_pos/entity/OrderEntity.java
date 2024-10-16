@@ -21,8 +21,8 @@ public class OrderEntity implements Serializable {
     @JoinColumn(name = "customer_id", referencedColumnName = "customerId")
     private CustomerEntity customer;
     private LocalDateTime orderDateTime;
-    private double orderTotal;
+    private double total;
     private String paymentMethod;
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<OrderDetailEntity> orderDetails;
 }
